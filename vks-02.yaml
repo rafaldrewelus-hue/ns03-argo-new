@@ -16,7 +16,7 @@ spec:
     classRef:
       name: builtin-generic-v3.7.0
       namespace: vmware-system-vks-public
-    version: v1.35.5---vmware.1-vkr.1
+    version: v1.36.1---vmware.4-vkr.5
     variables:
       - name: vmClass
         value: best-effort-medium
@@ -31,7 +31,7 @@ spec:
       machineDeployments:
         - class: node-pool
           name: vks-02-np-kf2p
-          replicas: 1
+          replicas: 3
           metadata:
             annotations:
               run.tanzu.vmware.com/resolve-os-image: os-name=photon, content-library=cl-d4a01292b67b80e94
