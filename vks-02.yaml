@@ -31,7 +31,7 @@ spec:
       machineDeployments:
         - class: node-pool
           name: vks-02-np-kf2p
-          replicas: 3
+          replicas: 1
           metadata:
             annotations:
               run.tanzu.vmware.com/resolve-os-image: os-name=photon, content-library=cl-d4a01292b67b80e94
