@@ -2,7 +2,7 @@ apiVersion: cluster.x-k8s.io/v1beta2
 kind: Cluster
 metadata:
   name: vks-02
-  namespace: ns01
+  namespace: ns03-argocd
 spec:
   clusterNetwork:
     pods:
@@ -16,7 +16,7 @@ spec:
     classRef:
       name: builtin-generic-v3.7.0
       namespace: vmware-system-vks-public
-    version: v1.36.1---vmware.4-vkr.5
+    version: v1.35.5---vmware.1-vkr.1
     variables:
       - name: vmClass
         value: best-effort-medium
